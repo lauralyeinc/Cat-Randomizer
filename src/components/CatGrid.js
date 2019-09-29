@@ -12,5 +12,10 @@ function CatGrid() {
       const kats = results.data;
       console.log(kats); 
     })
+    .catch(error => {
+      console.log("Sorry not Kat Pictures", error);
+    }); 
   })
 }
+
+export default CatGrid; 
